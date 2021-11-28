@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>.Me</title>
+
+	<!-- Import style.css from root directory -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
+</head>
+
+<body>
+	<div class="heading">
+		<h1>
+			I'am Arik, <span class="element"></span>
+		</h1>
+	</div>
+	<!-- Import typed.min.js file from typed.js folder -->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	
+	<!-- Add jquery cdn -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<!-- Add this script for successful implementation of typed.js -->
+	<script>
+		var typed = new Typed('.element', {
+		  // Waits 1000ms after typing "First"
+		  strings: ["" , 
+		  " ^5000 but ^1500 Everybody called me as " , 
+		  " ^1000 MasTya. " , 
+		  " a web developer. " , 
+		  " and a student. "] ,
+		  typeSpeed: 25,
+		  startDelay: 0,
+		  backSpeed:50,
+		  backDelay:2000,
+		  loop:true,
+		  loopCount:Infinity,
+
+		});
+	</script>
+</body>
+
+</html>
